@@ -1,56 +1,14 @@
-:root{
-    --header-web: #2196f3;
-    --nav-studio: #000000;
-    --site-nav-link: #2196F3;
-    --nav: #212121;
-    --nav-number: #757575;
-    /*Це там де h1 і кнопка */
-    --main: #2F303A;
-    --main-title: #FFFFFF;
-    --li-h2: #212121;
-    --li-p: #757575;
-    --footer-background: var(--main);
-    /*2ст*/
-    --button: #F5F4FA;
-    --icon-color:#AFB1B8;
-    --footer-button: #FFF;
-    --modal: #212121;
-    --taiming-fuction: cubic-bezier(0.4, 0, 0.2, 1); 
-}
 
- body{
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
- }
 
-.header{
-    padding-top: 24px;
-    padding-bottom: 25px;
-}
 
-.seaction-details{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
-.activity{
-    padding-bottom: 94px;
-}
 
-.activity-list{
-    display: flex;
-    justify-content: space-between;
-}
 
-.text-details{
-    color: var(--nav-number);
-}
 
-.activity-img{
-    width: 370px;
-    height: 294px;
 
-}
+
+
+
 
 .team{
     padding-top: 94px;
@@ -60,10 +18,7 @@
     background-color: var(--button);
 }
 
-.team-item{
-    background-color: var(--main-title);
-    width: 250px;
-}
+
 
 
 .footer{
@@ -77,49 +32,14 @@
     padding-bottom: 94px;
 }
 
-.post-taitel{
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 136%;
-    text-transform: uppercase;
-    color: var(--main-title);
-    margin-bottom: 30px;
-}
 
 
 
-.logo{
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    color: var(--header-web);
-    margin-right: 93px;
-}
-.black{
-    color: black;
-}
 
-.activity-item{
-    position: relative;
-}
 
-.activity-subtitle{
-    position: absolute;
-    bottom: 4px;
-    color: var(--main-title);
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    width: 100%;
-    background-color: rgba(47, 48, 58, 0.80);
-}
+
+
+
 
 .footer-logo{
     font-family: 'Raleway', sans-serif;
@@ -146,102 +66,17 @@
     color: rgba (255, 255, 255, 0.60);
 }
 
-.navigation{
-    font-size: 14px;
-    font-weight: 500
-}
+
 
 .logo-wrap{
     display: flex;
     align-items: center;
 }
 
-.header{
-    padding-bottom: 25px;
-    padding-top: 25px;
-}
 
-.header-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.seaction-post{
-    background-image: url(./img/Imgheader.webp);
-    background: linear-gradient(rgba(47, 48, 58, 0.40));
-    padding-top: 200px;
-    padding-bottom: 200px;
-    
-}
 
-.site-nav{
-    display: flex;
-    width: 281px;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.site-nav-link:hover{
-    color: var(--site-nav-link);
-
-}
-.site-nav-link{
-    color: var(--nav);
-    font-weight: 500;
-    font-size: 14px;
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-}
-
-.site-nav-link.current::after{
-    content: '';
-    display: block;
-    background-color: var(--site-nav-link);
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    border-radius: 4px;
-    left: 0;
-    bottom: -32px;
-    box-sizing: border-box;
-}
-
-.contact-link{
-    color: var(--nav-number);
-
-}
-
-.contacts{
-    display: flex;
-}
-
-.contacts .contact-link:hover{
-    color: var(--header-web);
-}
-
-.contact-link:hover .contact-icon{
-    fill: var(--header-web);
-}
-
-.contact-link{
-    fill: var(--li-p);
-    display: flex;
-    align-items: center;
-}
-
-.contact-icon{
-    margin-right: 10px;
-}
-
-.email{
-    margin-right: 50px;
-    font-weight: 500;
-    color: var(--nav-number);
-}
 
 .p.li{
     font-weight: 400px;
@@ -264,69 +99,21 @@
     width: 270px;
 }
 
-.seaction-details{
-    padding-top: 95px;
-}
 
 .site-details-item{
     width: 270px;
 }
 
-.site-details-item::before{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 120px;
-    background-color: var(--button);
-    border-radius: 4px;
-    background-image: url(./img/antenna1.webp);
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-}
 
-.site-details-item:nth-child(2)::before {
-    background-image: url(./img/clock1.webp);
-}
 
-.site-details-item:nth-child(3)::before {
-    background-image: url(./img/diagram1.webp);
-}
 
-.site-details-item:nth-child(4)::before {
-    background-image: url(./img/astronaut1.webp);
-}
 
-.site-details{
-    display: flex;
-    justify-content: space-between;
-    line-height: 24px;
-}
-
-.nav-wrap{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .contact{
     font-size: 14px;
     font-weight: 500;
 }
-.post-button{
-    color: var(--main-title);
-    background: var(--header-web);
-    width: 216px;
-    height: 50px;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 10px 32px;
-    border: 0;
-    border-radius: 4px;
-   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-   cursor: pointer;
-}
+
 
 .social-icon{
     width: 20px;
@@ -360,10 +147,7 @@
 }
 
 
-.post-wrap{
-    display: flex;
-    justify-content: center;
-}
+
 
 .details-title{
     color: var(--nav);
@@ -376,24 +160,10 @@
 }
 
 
-.seaction-title{
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-}
-.name{
-    color: #212121;
-    font-size: 16px;
-    font-weight: 500;
-}
 
 
-.team-img{
-    width: 270px;
-    height: 260px;
-    margin-bottom: 30px;
-}
+
+
 .team-item{
     width: 270px;
     padding-bottom: 30px;
@@ -401,23 +171,10 @@
 
 }
 
-.team-wrap{
-    text-align: center;
-}
-.team-list{
-    display: flex;
-    justify-content: space-between;
-}
 
-.profession{
-    color: var(--nav-number);
-    font-size: 16px;
-}
-.container{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
+
+
+
 .head-studio{
     color: var(--head-studio);
     font-family: 'Raleway', sans-serif;

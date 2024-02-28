@@ -1,0 +1,204 @@
+.modal__close-button{
+    margin-left: 490px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $footer-button;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(../img/moda-icon.svg#email);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.modal__icon{
+    fill: #000000;
+    &:hover,
+    &:focus{
+    fill: #2196F3;
+    transition-duration: 250ms;
+    transition-timing-function: $taiming-fuction;
+    }
+}
+
+
+.modal__form{
+    width: 448px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.modal__form-title{
+    width: 448px;
+    color: $modal;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+
+.modal__form-field{
+    position: relative; 
+}
+
+.modal__form-label{
+    color: $nav-number;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.modal__form-input{
+    width: 448px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    outline: none; 
+    &:hover,
+    &:focus{
+        outline: none;
+        border-color: $site-nav-link;
+        transition-duration: 250ms;
+        transition-timing-function: $taiming-fuction;
+        fill: $site-nav-link; 
+    }
+}
+
+
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    border-radius: 4px;
+    background-color: $footer-button;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+.backdrop.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
+
+.modal__form-icon{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 30px;
+    left: 12px;
+    &:hover,
+    &:focus{
+        color: $header-web;
+        transition-duration: 250ms;
+        transition-timing-function: $taiming-fuction;
+        fill: $site-nav-link; 
+}
+}
+
+.modal__form-comment{
+    color: $nav-number;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+
+.modal__window{
+    width: 448px;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    resize: none;
+}
+
+.modal-window::placeholder{
+    color: rgba(117, 117, 117, 0.50);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+.modal__form-policy{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.modal__send-text{
+    width: 623;
+    height: 24px;
+    color: $nav-number;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 7px;
+}
+
+.modal__conditions{
+    color: $site-nav-link;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+
+}
+
+.modal__agree-btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: $site-nav-link;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: $footer-button;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    margin-left: 112px;
+    margin-right: 136px;
+    margin-top: 30px;
+}
+
+.modal__form-checkbox{
+    width: 16px;
+    height: 15px;
+    fill: #212121;
+    margin-right: 7px;
+}
+
+
+.modal__email{
+    margin-right: 50px;
+    font-weight: 500;
+    color: $nav-number;
+}
+

@@ -1,6 +1,5 @@
 .team__list{
-    display: flex;
-    justify-content: space-between;
+    @include flex();
 }
 
 .team__item{
@@ -15,7 +14,7 @@
 }
 
 .team__wrap{
-    text-align: center;
+    @extend %text-center;
 }
 
 .team__name{
@@ -78,8 +77,7 @@
 }
 
 .team__social-list{
-    display: flex;
-    justify-content: space-between;
+    @include flex ();
     margin-right: 32px;
     margin-left: 32px;
     margin-top: 16px;

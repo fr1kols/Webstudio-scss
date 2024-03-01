@@ -7,9 +7,7 @@
 }
 
 .client__list{
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
+    @include flex();
     align-items: center;
     border-radius: 4px;
     margin-bottom: 70px;

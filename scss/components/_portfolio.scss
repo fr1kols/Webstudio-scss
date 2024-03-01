@@ -35,9 +35,9 @@
 }
 
 .portfolio{
-    display: flex;
+    @include flex();
     flex-wrap: wrap;
-    justify-content: space-between;
+   
 }
 
 .portfolio__item{
@@ -76,7 +76,6 @@
     color: $footer-button;
     padding: 63px 24px;
     opacity: 0;
-    height: 1000px;
     &:hover,
     &:focus{
     opacity: 1;
@@ -156,8 +155,7 @@ margin-bottom: 4px;
 }
 
 .footer__ul{
-    display: flex;
-    justify-content: space-between;
+    @include flex ();
     
 }
 
@@ -188,8 +186,7 @@ margin-bottom: 4px;
 }
 
 .footer__box{
-    display: flex; 
-    justify-content: space-between; 
+    @include flex ();
 }
 
 .footer__form-taitel{
@@ -236,7 +233,7 @@ margin-bottom: 4px;
 }
 
 .footer__form-input::placeholder{
-    display: flex;
+    @include flex ();
     width: 47px;
     height: 20px;
     flex-direction: column;

@@ -1,13 +1,9 @@
 .activity__title{
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
+    @extend %section-title;
 }
 
 .activity__list{
-    display: flex;
-    justify-content: space-between;
+    @include flex ();
 }
 
 .activity__item{

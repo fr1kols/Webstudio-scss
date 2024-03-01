@@ -7,13 +7,8 @@
 }
 
 .post__taitel{
-    text-align: center;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 136%;
-    text-transform: uppercase;
-    color: $main-title;
-    margin-bottom: 30px;
+  
+    @extend %section-title;
 }
 
 .post__wrap{

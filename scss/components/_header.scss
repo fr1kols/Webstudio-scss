@@ -10,15 +10,13 @@
 }
 
 .header__wrap{
-    display: flex;
-    justify-content: space-between;
+    @include flex ();
     align-items: center;
 }
 
 .header__site-nav{
-    display: flex;
+    @include flex ();
     width: 281px;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -74,7 +72,7 @@
 }
 
 .header__contacts{
-    display: flex;
+    @include flex (); 
 }
 
 
@@ -103,8 +101,7 @@
 }
 
 .header__nav-wrap{
-    display: flex;
-    justify-content: space-between;
+    @include flex (); 
     align-items: center;
 }
 

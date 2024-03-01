@@ -1,6 +1,5 @@
 .footer__box{ 
-    display: flex; 
-    justify-content: space-between; 
+    @include flex ();
 }
 
 .footer__logo{
@@ -36,8 +35,7 @@
 
 
 .footer__ul{
-    display: flex;
-    justify-content: space-between;
+    @include flex ();
     
 }
 

@@ -1,0 +1,21 @@
+/*.activity__title{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    }
+*/
+    %section-title{
+        text-align: center;
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 136%;
+        text-transform: uppercase;
+        color: $main-title;
+        margin-bottom: 30px;
+    }
+
+    %text-center{
+        text-align: center;
+    }
+   

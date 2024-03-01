@@ -29,6 +29,27 @@ a {
   padding: 0 15px;
 }
 
+/*.activity__title{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    }
+*/
+.activity__title, .post__taitel {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 136%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.team__wrap {
+  text-align: center;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -55,10 +76,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 281px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 281px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -122,6 +143,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header__contact-link:hover .header__contact-icon {
@@ -174,16 +198,6 @@ a {
   /*background: linear-gradient(rgba(47, 48, 58, 0.40));*/
   padding-top: 200px;
   padding-bottom: 200px;
-}
-
-.post__taitel {
-  text-align: center;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 136%;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  margin-bottom: 30px;
 }
 
 .post__wrap {
@@ -273,13 +287,6 @@ a {
   color: #757575;
 }
 
-.activity__title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-}
-
 .activity__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -343,10 +350,6 @@ a {
   width: 270px;
   height: 260px;
   margin-bottom: 30px;
-}
-
-.team__wrap {
-  text-align: center;
 }
 
 .team__name {
@@ -435,9 +438,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -764,11 +764,11 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .portfolio__item {
@@ -809,7 +809,6 @@ a {
   color: #FFF;
   padding: 63px 24px;
   opacity: 0;
-  height: 1000px;
 }
 .portfolio__product-action:hover, .portfolio__product-action:focus {
   opacity: 1;
@@ -987,6 +986,8 @@ a {
 .footer__form-input::-webkit-input-placeholder {
   display: -webkit-box;
   display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   width: 47px;
   height: 20px;
   -webkit-box-orient: vertical;
@@ -1002,6 +1003,7 @@ a {
 
 .footer__form-input::-moz-placeholder {
   display: flex;
+  justify-content: space-between;
   width: 47px;
   height: 20px;
   flex-direction: column;
@@ -1015,6 +1017,8 @@ a {
 .footer__form-input:-ms-input-placeholder {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 47px;
   height: 20px;
   -ms-flex-direction: column;
@@ -1030,6 +1034,8 @@ a {
 .footer__form-input::-ms-input-placeholder {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 47px;
   height: 20px;
   -ms-flex-direction: column;
@@ -1046,6 +1052,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 47px;
   height: 20px;
   -webkit-box-orient: vertical;

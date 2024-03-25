@@ -10,6 +10,7 @@
 
 .post__taitel{
     @extend %section-title;
+    font-size: 26px;
     
   }
 
@@ -40,7 +41,7 @@
     }
 
     .post__taitel{
-        font-size: 44px;
+        font-size: 44px
         
       }
       .post__button{

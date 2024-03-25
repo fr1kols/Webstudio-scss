@@ -1,10 +1,13 @@
 .details{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
      }
      .details__list{
-        @include flex ();
-          line-height: 24px;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+
        }
        .site-details__item{
         width: 270px;
@@ -22,32 +25,52 @@
        .details__text{
                color: $nav-number;
            }
-@media  screen and (min-width: 1200px) {
-    .details{
-        padding-top: 94px;
-        padding-bottom: 94px;
-         }
-         .details__list{
-              @include flex ();
-                line-height: 24px;
+           .site-details__item::before{
+                content: '';
+                border-radius: 4px;
+                width: 450px;
+                height: 120px;
+                background: $component;
              }
-             .site-details__item{
-                  width: 270px;
-                  height: 120px;
-                 }
-                 .details__title{
-                       color: $nav;
-                        width: 270px;
-                        font-size: 14px;
-                        font-style: normal;
-                        font-weight: 700;
-                       text-transform: uppercase;
-                        margin-bottom: 10px;
+             .details__title{
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
+                text-align: center;
+                color: $nav;
                  }
                  .details__text{
-                         color: $nav-number;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $web;
                      }
-}
+
+// @media  screen and (min-width: 1200px) {
+//     .details{
+//         padding-top: 94px;
+//         padding-bottom: 94px;
+//          }
+//          .details__list{
+//               @include flex ();
+//                 line-height: 24px;
+//              }
+//              .site-details__item{
+//                   width: 270px;
+//                   height: 120px;
+//                  }
+//                  .details__title{
+//                        color: $nav;
+//                         width: 270px;
+//                         font-size: 14px;
+//                         font-style: normal;
+//                         font-weight: 700;
+//                        text-transform: uppercase;
+//                         margin-bottom: 10px;
+//                  }
+//                  .details__text{
+//                          color: $nav-number;
+//                      }
+// }
 
 // .details{
 //     padding-top: 94px;

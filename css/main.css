@@ -51,7 +51,7 @@ a {
     font-weight: 700;
     }
 */
-.activity__title, .post__taitel {
+.post__taitel {
   text-align: center;
   font-size: 44px;
   font-weight: 900;
@@ -218,6 +218,10 @@ a {
   background-repeat: no-repeat;
 }
 
+.post__taitel {
+  font-size: 26px;
+}
+
 .post__button {
   color: #FFFFFF;
   background: #2196f3;
@@ -249,48 +253,20 @@ a {
 }
 /*background: linear-gradient(rgba(47, 48, 58, 0.40));*/
 .details {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.details__list {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .site-details__item {
   width: 270px;
-}
-
-.site-details__item::before {
-  content: "";
-  display: block;
-  width: 100%;
   height: 120px;
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  background-image: url(../img/antenna1.webp);
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.site-details__item:nth-child(2)::before {
-  background-image: url(../img/clock1.webp);
-}
-
-.site-details__item:nth-child(3)::before {
-  background-image: url(../img/diagram1.webp);
-}
-
-.site-details__item:nth-child(4)::before {
-  background-image: url(../img/astronaut1.webp);
-}
-
-.details__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  line-height: 24px;
 }
 
 .details__title {
@@ -303,57 +279,30 @@ a {
   margin-bottom: 10px;
 }
 
-.text__details {
-  color: #757575;
-}
-
 .details__text {
   color: #757575;
 }
 
-.activity__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.site-details__item::before {
+  content: "";
+  border-radius: 4px;
+  width: 450px;
+  height: 120px;
+  background: #f5f4fa;
 }
 
-.activity__item {
-  position: relative;
-}
-
-.activity__img {
-  width: 370px;
-  height: 294px;
-}
-
-.activity {
-  padding-bottom: 94px;
-}
-
-.activity__subtitle {
-  position: absolute;
-  bottom: 4px;
-  color: #FFFFFF;
-  font-size: 14px;
+.details__title {
   font-weight: 700;
-  letter-spacing: 0.42px;
+  font-size: 14px;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 70px;
-  width: 100%;
-  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  color: #212121;
+}
+
+.details__text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #757575;
 }
 
 .team__list {
@@ -852,6 +801,11 @@ a {
   font-size: 16px;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
+}
+
+.footer {
+  width: 480px;
+  height: 603px;
 }
 
 .modal__close-button {

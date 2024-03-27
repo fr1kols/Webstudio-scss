@@ -1,86 +1,149 @@
-.team__list{
-    @include flex();
+.seaction__title{
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding-bottom: 45px;
+    padding-left: 50px;
+}
+.team__img{
+    width: 450px;
+    height: 460px;
+    
 }
 
 .team__item{
-    background-color: $main-title;
-    width: 250px;
+    width: 450px;
+    height: 622px;
+    
 }
-
-.team__img{
-    width: 270px;
-    height: 260px;
-    margin-bottom: 30px;
-}
-
-.team__wrap{
-    @extend %text-center;
-}
-
 .team__name{
-    color: $nav;
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: $li-h2;
 }
 
 .team__profession{
-    color: $nav-number;
+    font-weight: 400;
     font-size: 16px;
+    text-align: center;
+    color:  $web;
 }
-
-.team__social-icon{
-    width: 20px;
-    height: 20px;
-}
-
-.team__social-link{
-    fill: $icon-color;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 250ms;
-     transition-timing-function: $taiming-fuction;
-    &:hover,
-    &:focus{
-        fill: $button;
-        background-color: $header-web;
-        
-    }
-}
-
-
 
 .team__item{
-    width: 270px;
+    border-radius: 0 0 4px 4px;
+    width: 450px;
+    height: 622px;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    background: $team-base;
     padding-bottom: 30px;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
-}
-
-.team{
-    padding-top: 94px;
-    padding-bottom: 94px;
-    font-size: 19px;
-    font-weight: 700;
-    background-color: $button;
-}
-
-.seaction__title{
-    margin-bottom: 50px;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-
 }
 
 .team__social-list{
-    @include flex ();
-    margin-right: 32px;
-    margin-left: 32px;
-    margin-top: 16px;
+    width: 206px;
+    height: 44px;
 }
+
+.team__social-list-item{
+    width: 44px;
+    height: 44px;
+    fill: $team-base;
+}
+
+.team__social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $icon-color;
+     width: 20px;
+     height: 20px;
+      border-radius: 50%;
+        
+     }
+// .team__list{
+//     @include flex();
+// }
+
+// .team__item{
+//     background-color: $main-title;
+//     width: 250px;
+// }
+
+// .team__img{
+//     width: 270px;
+//     height: 260px;
+//     margin-bottom: 30px;
+// }
+
+// .team__wrap{
+//     @extend %text-center;
+// }
+
+// .team__name{
+//     color: $nav;
+//     font-size: 16px;
+//     font-weight: 500;
+// }
+
+// .team__profession{
+//     color: $nav-number;
+//     font-size: 16px;
+// }
+
+// .team__social-icon{
+//     width: 20px;
+//     height: 20px;
+// }
+
+// .team__social-link{
+//     fill: $icon-color;
+//     width: 44px;
+//     height: 44px;
+//     border-radius: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     transition-duration: 250ms;
+//      transition-timing-function: $taiming-fuction;
+//     &:hover,
+//     &:focus{
+//         fill: $button;
+//         background-color: $header-web;
+        
+//     }
+// }
+
+
+
+// .team__item{
+//     width: 270px;
+//     padding-bottom: 30px;
+//     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+// }
+
+// .team{
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+//     font-size: 19px;
+//     font-weight: 700;
+//     background-color: $button;
+// }
+
+// .seaction__title{
+//     margin-bottom: 50px;
+//     text-align: center;
+//     font-size: 36px;
+//     font-weight: 700;
+
+// }
+
+// .team__social-list{
+//     @include flex ();
+//     margin-right: 32px;
+//     margin-left: 32px;
+//     margin-top: 16px;
+// }
 
 

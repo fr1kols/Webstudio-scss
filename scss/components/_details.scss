@@ -74,6 +74,7 @@
     .details__list { 
       display: flex; 
       justify-content: space-between; 
+      flex-wrap: nowrap;
     } 
     .site-details__item { 
       min-width: 270px; 

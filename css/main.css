@@ -257,44 +257,26 @@ a {
   padding-bottom: 60px;
 }
 
-.details__list {
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .site-details__item {
-  width: 270px;
-  height: 120px;
+  min-width: 290px;
+  max-width: 450px;
+  margin-bottom: 30px;
 }
 
 .details__title {
   color: #212121;
-  width: 270px;
   font-size: 14px;
-  font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
-}
-
-.details__text {
-  color: #757575;
-}
-
-.details__title {
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
   text-align: center;
-  color: #212121;
 }
 
 .details__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -311,31 +293,56 @@ a {
   background-position: center;
   margin-bottom: 30px;
   border-radius: 4px;
-  width: 450px;
-  height: 120px;
 }
 
 .site-details__item:nth-child(2)::before {
   background-image: url(../img/clock1.webp);
-  border-radius: 4px;
-  width: 450px;
-  height: 120px;
 }
 
 .site-details__item:nth-child(3)::before {
   background-image: url(../img/diagram1.webp);
-  border-radius: 4px;
-  width: 450px;
-  height: 120px;
 }
 
 .site-details__item:nth-child(4)::before {
   background-image: url(../img/astronaut1.webp);
-  border-radius: 4px;
-  width: 450px;
-  height: 120px;
 }
 
+@media screen and (min-width: 768px) {
+  .details__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .site-details__item {
+    min-width: 354px;
+    max-width: 354px;
+  }
+  .details__title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .details {
+    padding-top: 94px;
+  }
+  .details__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .site-details__item {
+    min-width: 270px;
+    max-width: 270px;
+  }
+}
 .team__list {
   display: -webkit-box;
   display: -ms-flexbox;

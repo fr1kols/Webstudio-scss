@@ -1,151 +1,345 @@
-.footer__box{ 
-    @include flex ();
+.footer{
+    background-color: $main;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer__logo{
-    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: $main-title;
     font-size: 26px;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: $header-web;
-    vertical-align: 20px;
+    line-height: 171.429%;
+}
+
+.footer__white{
+    color: $site-nav-link;
+    font-size: 26px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer__list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer__city{
-    color: $main-title;
-
-}
-
-.footer__link{
-    color: rgba(255, 255, 255, 0.60);
-}
-
-.footer__link{
-    color: rgba (255, 255, 255, 0.60);
-}
-
-.footer__join{
+    display: flex;
+    justify-content: center;
+    color:  $footer-button;
+    font-family: Roboto;
+    font-weight: 400;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    color: $main-title;
-    text-transform: uppercase;
-    margin-left: 15px;
-    margin-bottom: 10px;
+    line-height: 171.429%;
 }
 
-
-.footer__ul{
-    @include flex ();
+.footer__contacts{
+    display: flex;
+    justify-content: center;
+    color: $footer-button;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171.429%;
     
 }
 
-.footer__class{
-    fill: $icon-color;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.10);
-    margin: 10px;
-    border-radius: 50%;
+.footer__join{
     display: flex;
     justify-content: center;
-    align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: var(--taiming-fuction);
-    &:hover,
-    &:focus{
-        fill: $button;
-        background-color: $header-web;
-    }
+    color: $main-title;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .footer__icon{
     width: 20px;
     height: 20px;
-    fill: white;
-    margin: 10px;
 }
 
-.footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: $main;
+.footer__ul{
+    @include flex();
+    width: 206px;
 }
 
-.footer__white{
-    color: #FFF;
-}
-
-
-.footer__form-taitel{
-    color: $footer-button;
+.footer__contacts{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-family:  $font-family;
+    font-weight: 400;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    line-height: 171.429%;
 }
 
+.footer__contacts{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-family:  $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171.429%;
+     }
+
+.footer__class{
+    fill: $icon-color;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.10);
+    transition-property: fill  $main;
+
+    &:hover,
+    &:focus {
+        transition-duration: 250ms;
+        fill:  $main-title;
+        background-color:  $site-nav-link;
+}
+}
 .footer__form-input{
-    width: 358px;
-    height: 50px;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 15px 70px 15px 15px;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(33, 150, 243, 0.00);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    flex-shrink: 0;
+    margin-right: 12px;
 }
 
 .footer__subscribe{
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color:  $site-nav-link;
     width: 200px;
     height: 50px;
-    border-radius: 4px;
-    background: $site-nav-link;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: $footer-button;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px; 
-    letter-spacing: 0.96px;
     border: none;
-    cursor: pointer;
+    color: $main-title;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .footer__telegram-svg{
     width: 24px;
     height: 24px;
-    flex-shrink: 0;
-    fill: #FFF;
+    margin-left: 10px;
+    fill: $main-title;
 }
 
-.footer__form-input::placeholder{
-    display: flex;
-    width: 47px;
-    height: 20px;
-    flex-direction: column;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.60);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.footer__class{
-    fill: $icon-color;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.10);
-    margin: 10px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: $taiming-fuction;
-    &:hover,
-    &:focus{
-        fill: $button;
-        background-color: $header-web;
+@media screen and (min-width: 480px){
+    .footer__form-input{
+        padding: 15px 260px 15px 16px;
     }
 }
+
+@media screen and (min-width: 768px){
+    .footer__subscribe{
+        margin: 0 auto;
+    }
+
+    .footer__city{
+        justify-content: start;
+    }
+
+    .footer__list{
+        display: flex;      
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .footer__subscribe{
+        padding: 15px 387px 15px 16px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .footer__white{
+        justify-content: left;
+    }
+
+    .footer__contacts{
+        justify-content: left;
+    }
+
+    .footer__form-input{
+        padding: 15px 295px 15px 16px;
+        margin-right: 0;
+    }
+
+    .footer__list{
+        flex-wrap: nowrap;
+    }
+
+    .footer__form-wrap{
+        display: flex;
+    }
+}
+
+// .footer__box{ 
+//     @include flex ();
+// }
+
+// .footer__logo{
+//     font-family: 'Raleway', sans-serif;
+//     font-size: 26px;
+//     font-weight: 700;
+//     color: $header-web;
+//     vertical-align: 20px;
+// }
+
+// .footer__city{
+//     color: $main-title;
+
+// }
+
+// .footer__link{
+//     color: rgba(255, 255, 255, 0.60);
+// }
+
+// .footer__link{
+//     color: rgba (255, 255, 255, 0.60);
+// }
+
+// .footer__join{
+//     font-size: 14px;
+//     font-style: normal;
+//     font-weight: 700;
+//     color: $main-title;
+//     text-transform: uppercase;
+//     margin-left: 15px;
+//     margin-bottom: 10px;
+// }
+
+
+// .footer__ul{
+//     @include flex ();
+    
+// }
+
+// .footer__class{
+//     fill: $icon-color;
+//     width: 44px;
+//     height: 44px;
+//     background-color: rgba(255, 255, 255, 0.10);
+//     margin: 10px;
+//     border-radius: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     transition-duration: 250ms;
+//     transition-timing-function: var(--taiming-fuction);
+//     &:hover,
+//     &:focus{
+//         fill: $button;
+//         background-color: $header-web;
+//     }
+// }
+
+// .footer__icon{
+//     width: 20px;
+//     height: 20px;
+//     fill: white;
+//     margin: 10px;
+// }
+
+// .footer{
+//     padding-top: 60px;
+//     padding-bottom: 60px;
+//     background-color: $main;
+// }
+
+// .footer__white{
+//     color: #FFF;
+// }
+
+
+// .footer__form-taitel{
+//     color: $footer-button;
+//     font-size: 14px;
+//     font-style: normal;
+//     font-weight: 700;
+//     text-transform: uppercase;
+//     margin-bottom: 20px;
+// }
+
+// .footer__form-input{
+//     width: 358px;
+//     height: 50px;
+//     border-radius: 4px;
+//     border: 1px solid rgba(255, 255, 255, 0.30);
+//     background: rgba(33, 150, 243, 0.00);
+//     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+//     flex-shrink: 0;
+// }
+
+// .footer__subscribe{
+//     width: 200px;
+//     height: 50px;
+//     border-radius: 4px;
+//     background: $site-nav-link;
+//     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+//     color: $footer-button;
+//     text-align: center;
+//     font-size: 16px;
+//     font-style: normal;
+//     font-weight: 700;
+//     line-height: 30px; 
+//     letter-spacing: 0.96px;
+//     border: none;
+//     cursor: pointer;
+// }
+
+// .footer__telegram-svg{
+//     width: 24px;
+//     height: 24px;
+//     flex-shrink: 0;
+//     fill: #FFF;
+// }
+
+// .footer__form-input::placeholder{
+//     display: flex;
+//     width: 47px;
+//     height: 20px;
+//     flex-direction: column;
+//     justify-content: center;
+//     color: rgba(255, 255, 255, 0.60);
+//     font-size: 16px;
+//     font-style: normal;
+//     font-weight: 400;
+// }
+
+// .footer__class{
+//     fill: $icon-color;
+//     width: 44px;
+//     height: 44px;
+//     background-color: rgba(255, 255, 255, 0.10);
+//     margin: 10px;
+//     border-radius: 50%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     transition-duration: 250ms;
+//     transition-timing-function: $taiming-fuction;
+//     &:hover,
+//     &:focus{
+//         fill: $button;
+//         background-color: $header-web;
+//     }
+// }

@@ -213,7 +213,7 @@ a {
 }
 
 .post {
-  background-image: url(./../../img/imgheader.webp);
+  background-image: url(../../../../img/imgheader.webp);
   /*background: linear-gradient(rgba(47, 48, 58, 0.40));*/
   padding-top: 118px;
   padding-bottom: 118px;

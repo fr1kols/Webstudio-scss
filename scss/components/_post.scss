@@ -1,11 +1,10 @@
-.post{
-        background-image: url(../../../../img/imgheader.webp);
-        /*background: linear-gradient(rgba(47, 48, 58, 0.40));*/
-        padding-top: 118px;
-         padding-bottom: 118px;
-         background-position: center;
-         background-size: cover;
-         background-repeat: no-repeat;
+.post{ 
+  background-image: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../img/Imgheader.png); 
+  padding-top: 118px; 
+   padding-bottom: 118px; 
+   background-position: center; 
+   background-size: cover; 
+   background-repeat: no-repeat; 
 }
 
 .post__taitel{

@@ -109,6 +109,14 @@
             margin-bottom: 0; 
         } 
      }
+
+     @media (min-device-pixel-ratio:2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx){
+        .team{
+            background-image: url(./img/mobile/1-img-2x.png);
+        }
+     }
 // .team__list{
 //     @include flex();
 // }
